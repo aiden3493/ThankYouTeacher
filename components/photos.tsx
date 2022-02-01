@@ -20,7 +20,7 @@ function Photos() {
         <motion.div
           className={styled.photos}
           initial={{ x: 1450 }}
-          animate={{ x: -1800 }}
+          animate={{ x: -1850 }}
           transition={{
             duration: 35,
             repeat: Infinity,
@@ -45,7 +45,7 @@ function Photos() {
         <motion.div
           className={styled.photos}
           initial={{ x: 1450 }}
-          animate={{ x: -1800 }}
+          animate={{ x: -1850 }}
           transition={{
             duration: 35,
             repeat: Infinity,
@@ -126,7 +126,7 @@ function Photos() {
         <motion.div
           className={styled.photos}
           initial={{ x: 1450 }}
-          animate={{ x: -1800 }}
+          animate={{ x: -1850 }}
           transition={{
             duration: 30,
             repeat: Infinity,
@@ -151,7 +151,7 @@ function Photos() {
         <motion.div
           className={styled.photos}
           initial={{ x: 1450 }}
-          animate={{ x: -1800 }}
+          animate={{ x: -1850 }}
           transition={{
             duration: 30,
             repeat: Infinity,
