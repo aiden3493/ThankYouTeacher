@@ -35,3 +35,7 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+#ppt
+.러프.pptx
+.~$러프.pptx

@@ -1,16 +1,14 @@
 html,
 body {
+  display: flex;
+  background: rgb(255, 255, 255);
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow: scroll;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+::-webkit-scrollbar {
+  width: 0;
 }
