@@ -16,13 +16,13 @@ function Photos() {
   return (
     <div className={styled.photosSection}>
       <h1>test</h1>
-      <motion.div className={styled.photosGallery}>
+      <motion.div className={styled.photos}>
         <motion.div
           className={styled.photos}
           initial={{ x: 1450 }}
           animate={{ x: -1850 }}
           transition={{
-            duration: 35,
+            duration: 55,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
@@ -47,7 +47,7 @@ function Photos() {
           initial={{ x: 1450 }}
           animate={{ x: -1850 }}
           transition={{
-            duration: 35,
+            duration: 55,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
@@ -75,7 +75,7 @@ function Photos() {
           initial={{ x: 1450 }}
           animate={{ x: -1850 }}
           transition={{
-            duration: 25,
+            duration: 45,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
@@ -84,23 +84,23 @@ function Photos() {
           }}>
           {/* first */}
 
-          <Photo ImageSrc={photo2} />
-          <Photo ImageSrc={photo} />
           <Photo ImageSrc={photo5} />
           <Photo ImageSrc={photo3} />
+          <Photo ImageSrc={photo2} />
           <Photo ImageSrc={photo6} />
+          <Photo ImageSrc={photo9} />
           <Photo ImageSrc={photo4} />
+          <Photo ImageSrc={photo} />
           <Photo ImageSrc={photo8} />
           <Photo ImageSrc={photo7} />
           <Photo ImageSrc={photo10} />
-          <Photo ImageSrc={photo9} />
         </motion.div>
         <motion.div
           className={styled.photos}
           initial={{ x: 1450 }}
           animate={{ x: -1850 }}
           transition={{
-            duration: 25,
+            duration: 45,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
@@ -109,16 +109,16 @@ function Photos() {
           }}>
           {/* second */}
 
-          <Photo ImageSrc={photo2} />
-          <Photo ImageSrc={photo} />
           <Photo ImageSrc={photo5} />
           <Photo ImageSrc={photo3} />
+          <Photo ImageSrc={photo2} />
           <Photo ImageSrc={photo6} />
+          <Photo ImageSrc={photo9} />
           <Photo ImageSrc={photo4} />
+          <Photo ImageSrc={photo} />
           <Photo ImageSrc={photo8} />
           <Photo ImageSrc={photo7} />
           <Photo ImageSrc={photo10} />
-          <Photo ImageSrc={photo9} />
         </motion.div>
       </motion.div>
 
@@ -128,7 +128,7 @@ function Photos() {
           initial={{ x: 1450 }}
           animate={{ x: -1850 }}
           transition={{
-            duration: 30,
+            duration: 50,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
@@ -137,23 +137,23 @@ function Photos() {
           }}>
           {/* first */}
 
-          <Photo ImageSrc={photo10} />
-          <Photo ImageSrc={photo} />
           <Photo ImageSrc={photo9} />
-          <Photo ImageSrc={photo2} />
-          <Photo ImageSrc={photo8} />
           <Photo ImageSrc={photo3} />
+          <Photo ImageSrc={photo10} />
+          <Photo ImageSrc={photo2} />
+          <Photo ImageSrc={photo} />
+          <Photo ImageSrc={photo8} />
+          <Photo ImageSrc={photo5} />
           <Photo ImageSrc={photo7} />
           <Photo ImageSrc={photo4} />
           <Photo ImageSrc={photo6} />
-          <Photo ImageSrc={photo5} />
         </motion.div>
         <motion.div
           className={styled.photos}
           initial={{ x: 1450 }}
           animate={{ x: -1850 }}
           transition={{
-            duration: 30,
+            duration: 50,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
@@ -162,16 +162,16 @@ function Photos() {
           }}>
           {/* second */}
 
-          <Photo ImageSrc={photo10} />
-          <Photo ImageSrc={photo} />
           <Photo ImageSrc={photo9} />
-          <Photo ImageSrc={photo2} />
-          <Photo ImageSrc={photo8} />
           <Photo ImageSrc={photo3} />
+          <Photo ImageSrc={photo10} />
+          <Photo ImageSrc={photo2} />
+          <Photo ImageSrc={photo} />
+          <Photo ImageSrc={photo8} />
+          <Photo ImageSrc={photo5} />
           <Photo ImageSrc={photo7} />
           <Photo ImageSrc={photo4} />
           <Photo ImageSrc={photo6} />
-          <Photo ImageSrc={photo5} />
         </motion.div>
       </motion.div>
     </div>
