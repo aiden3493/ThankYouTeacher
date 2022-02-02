@@ -1,0 +1,36 @@
+/* page */
+
+.main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  margin-top: 15vh;
+  flex-direction: column;
+  user-select: none;
+}
+
+/* components */
+.PhotoGallerys {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.PhotoGallery {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  border: solid 1px black;
+  background-color: white;
+  font-size: 10px;
+  border-radius: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
+}

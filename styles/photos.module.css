@@ -8,6 +8,7 @@
   align-items: center;
   width: 3000px;
   overflow: hidden;
+  height: 770px;
 }
 
 .photos {
@@ -28,4 +29,32 @@
   font-size: 10px;
   border-radius: 6px;
   background-repeat: no-repeat;
+}
+
+/* button */
+.Linkbutton {
+  position: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 25px;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: white;
+  transition: 0.15s;
+  border: solid 1px gray;
+}
+
+.Linkbutton:hover {
+  box-shadow: 0px 1px 10px rgb(129, 129, 129);
+  background-color: rgb(245, 245, 245);
+  transform: translateY(-2px);
+}
+
+.Linkbutton:active {
+  box-shadow: 0px 0px 5px rgb(129, 129, 129);
+  background-color: rgb(243, 243, 243);
+  transform: translateY(1px);
 }

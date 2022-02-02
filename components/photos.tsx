@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styled from "../styles/photos.module.css";
 import Photo from "./photo";
 import photo from "../public/test.png";
@@ -174,6 +175,9 @@ function Photos() {
           <Photo ImageSrc={photo6} />
         </motion.div>
       </motion.div>
+      <Link href='/fullPhoto'>
+        <motion.button className={styled.Linkbutton}>test</motion.button>
+      </Link>
     </div>
   );
 }

@@ -1,0 +1,144 @@
+.footer {
+  width: 100vw;
+  height: 728px;
+  display: flex;
+  position: absolute;
+  align-content: center;
+  align-items: center;
+  max-width: 100vw;
+  margin-top: 700px;
+  font-size: 10px;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.outHr1 {
+  width: 100vw;
+  color: gray;
+  position: absolute;
+  align-content: center;
+  align-items: center;
+  font-size: 10px;
+  flex-direction: column;
+  z-index: 1;
+  margin-top: 0px;
+}
+
+.inHr1 {
+  width: 50vw;
+  color: gray;
+  position: absolute;
+  margin-top: 150px;
+}
+
+.inHr2 {
+  width: 50vw;
+  color: gray;
+  position: absolute;
+  margin-top: 200px;
+}
+
+.makingLink {
+  cursor: pointer;
+}
+
+.Link {
+  user-select: none;
+  margin-top: 154px;
+  margin-left: 5px;
+  display: flex;
+  width: 50vw;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 8px;
+}
+
+.maker {
+  display: flex;
+  flex-direction: column;
+}
+
+.maker1 {
+  user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+  display: flex;
+  width: 50vw;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 7px;
+  flex-wrap: wrap;
+}
+
+.maker23 {
+  user-select: none;
+  margin-left: 5px;
+  display: flex;
+  width: 50vw;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 7px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.person {
+  color: gray;
+}
+
+.person::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background-color: #dee2e6;
+  vertical-align: -1px;
+  margin: 0 8px;
+}
+
+.person1 {
+  color: gray;
+  margin-left: 100px;
+  display: inline;
+}
+
+.person2 {
+  color: gray;
+  margin-left: 149px;
+  display: inline;
+}
+
+.person3 {
+  color: gray;
+  display: inline;
+}
+
+.keyword {
+  display: block;
+}
+
+.specialThanks {
+  max-width: 31%;
+  margin-left: 13.4rem;
+  position: absolute;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 7px;
+  flex-wrap: wrap;
+}
+
+.SPTHXperson {
+  color: gray;
+}
+
+.SPTHXperson::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background-color: #dee2e6;
+  vertical-align: -1px;
+  margin: 0 8px;
+}
