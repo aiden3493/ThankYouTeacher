@@ -20,10 +20,10 @@ function Photos() {
       <motion.div className={styled.photos}>
         <motion.div
           className={styled.photos}
-          initial={{ x: 1450 }}
-          animate={{ x: -1850 }}
+          initial={{ x: 1550 }}
+          animate={{ x: -1950 }}
           transition={{
-            duration: 55,
+            duration: 50,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
@@ -45,10 +45,10 @@ function Photos() {
         </motion.div>
         <motion.div
           className={styled.photos}
-          initial={{ x: 1450 }}
-          animate={{ x: -1850 }}
+          initial={{ x: 1550 }}
+          animate={{ x: -1950 }}
           transition={{
-            duration: 55,
+            duration: 50,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
@@ -73,10 +73,10 @@ function Photos() {
       <motion.div className={styled.photos}>
         <motion.div
           className={styled.photos}
-          initial={{ x: 1450 }}
-          animate={{ x: -1850 }}
+          initial={{ x: 1350 }}
+          animate={{ x: -1750 }}
           transition={{
-            duration: 45,
+            duration: 30,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
@@ -98,10 +98,10 @@ function Photos() {
         </motion.div>
         <motion.div
           className={styled.photos}
-          initial={{ x: 1450 }}
-          animate={{ x: -1850 }}
+          initial={{ x: 1350 }}
+          animate={{ x: -1750 }}
           transition={{
-            duration: 45,
+            duration: 30,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
@@ -129,7 +129,7 @@ function Photos() {
           initial={{ x: 1450 }}
           animate={{ x: -1850 }}
           transition={{
-            duration: 50,
+            duration: 40,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
@@ -154,7 +154,7 @@ function Photos() {
           initial={{ x: 1450 }}
           animate={{ x: -1850 }}
           transition={{
-            duration: 50,
+            duration: 40,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
