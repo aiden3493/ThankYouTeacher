@@ -42,6 +42,14 @@
 
 /* page */
 
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
 .writeLetterSection {
   width: 100vw;
   display: flex;
@@ -83,11 +91,11 @@
   flex-direction: column;
   gap: 10px;
   box-shadow: 0px 0px 10px gray;
-  cursor: pointer;
 }
 
 .dragAndDropZoneIn {
   margin-top: 13px;
+  margin-bottom: 8px;
   display: flex;
   border-radius: 15px;
   border: 2px dashed;
@@ -98,4 +106,67 @@
   align-content: center;
   flex-direction: column;
   cursor: pointer;
+}
+
+.filesList {
+  display: flex;
+  width: 620px;
+  height: 50px;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  border: 2px gray;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.filesList p {
+  margin-left: 20px;
+}
+
+.filesList button {
+  margin-right: 13px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(235, 235, 235);
+  width: 25px;
+  height: 25px;
+}
+
+.filesList button:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+.upload {
+  width: 350px;
+  height: 50px;
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.upload:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
 }

@@ -1,12 +1,14 @@
-import { json } from "node:stream/consumers";
-import { useCallback, useState } from "react";
+import { PromiseProvider } from "mongoose";
+import Link from "next/link";
+import { FunctionComponent, useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import styled from "../styles/TeacherToStudentCSS.module.css";
 
-function Letter() {
-  const [filesArray, setFilesArray] = useState<object[]>([]);
+const Letter: FunctionComponent = () => {
+  const [filesList, setFilesList] = useState<any[]>([]);
+
   const onDrop = useCallback((acceptedFiles) => {
-    setFilesArray((oldArray) => [...oldArray, acceptedFiles]);
+    acceptedFiles.map((file: any) => setFilesList((prev) => [...prev, file]));
   }, []);
 
   const { getRootProps, getInputProps, isDragActive, isDragAccept } =
@@ -15,8 +17,15 @@ function Letter() {
       multiple: true,
     });
 
+  const removeFileList = (file: any) => {
+    const updatedList = [...filesList];
+    updatedList.splice(filesList.indexOf(file), 1);
+    setFilesList(updatedList);
+    console.log(updatedList);
+  };
+
   return (
-    <div>
+    <div className={styled.page}>
       <form className={styled.writeLetterForm}>
         {/* letter */}
         <h1>test</h1>
@@ -31,14 +40,14 @@ function Letter() {
         {/* photos */}
         <h1>test</h1>
         <div
-          {...getRootProps()}
           className={styled.dragAndDropZoneOut}
           style={
-            filesArray.length === 0
+            filesList.length === 0
               ? { height: "100px" }
-              : { height: `${110 + 100 * filesArray.length}px` }
+              : { height: `${100 + 60 * filesList.length + 10}px` }
           }>
           <div
+            {...getRootProps()}
             className={styled.dragAndDropZoneIn}
             style={isDragAccept === true ? { borderColor: "gray" } : {}}>
             <input {...getInputProps()} />
@@ -48,15 +57,34 @@ function Letter() {
               <p>클릭 또는 드래그 앤 드롭으로 파일을 업로드해주세요</p>
             )}
           </div>
+          {filesList.length === 0 ? (
+            <></>
+          ) : (
+            filesList.map((file) => {
+              return (
+                <div
+                  className={styled.filesList}
+                  key={`${file?.path}`}
+                  id={`${file?.name}`}>
+                  <p>{`${file?.name}`}</p>
+                  <button
+                    id={`${file?.name}Remove`}
+                    onClick={() => {
+                      removeFileList(file);
+                    }}>
+                    x
+                  </button>
+                </div>
+              );
+            })
+          )}
         </div>
       </form>
-      <h1>여백</h1>
-      <h1>여백</h1>
-      <h1>여백</h1>
-      <h1>여백</h1>
-      <h1>여백</h1>
+      <Link href='/'>
+        <button className={styled.upload}>UPLOAD</button>
+      </Link>
     </div>
   );
-}
+};
 
 export default Letter;

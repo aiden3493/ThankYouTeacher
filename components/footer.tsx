@@ -18,6 +18,11 @@ function footer() {
           <h1 className={styled.person1}>유도경</h1>
           <h1 className={styled.person}>문소아</h1>
         </div>
+        <div className={styled.maker1}>
+          <h1>Assistant Manager</h1>
+          <h1 className={styled.Assist}>문소아</h1>
+          <h1 className={styled.person}>채혜림</h1>
+        </div>
         <div className={styled.maker23}>
           <h1>devleoper</h1>
           <h1 className={styled.person2}>유도경</h1>
@@ -40,7 +45,6 @@ function footer() {
             <h1 className={styled.SPTHXperson}>이채경</h1>
             <h1 className={styled.SPTHXperson}>이현수</h1>
             <h1 className={styled.SPTHXperson}>이해민</h1>
-            <h1 className={styled.SPTHXperson}>채혜림</h1>
             <h1 className={styled.SPTHXperson}>최예람</h1>
             <h1 className={styled.person3}>최진규</h1>
           </div>

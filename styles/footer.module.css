@@ -102,6 +102,12 @@
   display: inline;
 }
 
+.Assist {
+  color: gray;
+  margin-left: 93px;
+  display: inline;
+}
+
 .person2 {
   color: gray;
   margin-left: 149px;
@@ -118,7 +124,7 @@
 }
 
 .specialThanks {
-  max-width: 31%;
+  max-width: 29%;
   margin-left: 13.4rem;
   position: absolute;
   user-select: none;
