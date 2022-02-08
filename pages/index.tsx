@@ -10,7 +10,6 @@ import Footer from "../components/footer";
 function Home() {
   return (
     <>
-      <Navbar />
       <div className={styled.content}>
         <Letter />
         <Message />

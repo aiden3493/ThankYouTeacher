@@ -1,14 +1,14 @@
 import { AppProps } from "next/app";
-import { AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import "../styles/globals.css";
+import Navbar from "../components/Navbar";
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <AnimateSharedLayout>
-      <AnimatePresence>
-        <Component {...pageProps} />
-      </AnimatePresence>
-    </AnimateSharedLayout>
+    <AnimatePresence>
+      <Navbar />
+      <Component {...pageProps} />
+    </AnimatePresence>
   );
 }
 

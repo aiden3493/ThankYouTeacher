@@ -24,11 +24,11 @@ function footer() {
           <h1 className={styled.person}>채혜림</h1>
         </div>
         <div className={styled.maker23}>
-          <h1>devleoper</h1>
+          <h1>Developer</h1>
           <h1 className={styled.person2}>유도경</h1>
         </div>
         <div className={styled.maker23}>
-          <h1>Special Thanks</h1>
+          <h1>Thanks To</h1>
           <div className={styled.specialThanks}>
             <h1 className={styled.SPTHXperson}>강민재</h1>
             <h1 className={styled.SPTHXperson}>김승하</h1>

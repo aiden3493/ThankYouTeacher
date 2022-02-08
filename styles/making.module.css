@@ -1,0 +1,49 @@
+.content {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.container {
+  position: static;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 700px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.container p {
+  position: absolute;
+}
+
+.openedContainer {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 700px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 9px 0px gray;
+  cursor: pointer;
+}
+
+.video {
+  margin-top: 28px;
+}
+
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 35px;
+  border-radius: 15px;
+}

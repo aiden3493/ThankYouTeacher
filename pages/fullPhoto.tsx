@@ -7,7 +7,6 @@ import { useState } from "react";
 function fullPhoto() {
   return (
     <>
-      <Navbar />
       <div className={styled.main}>
         <motion.div className={styled.PhotoGallerys}>
           <PhotoGallery name='강민재' />
