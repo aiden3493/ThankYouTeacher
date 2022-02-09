@@ -11,14 +11,8 @@ function PersonalMessage() {
 
   const backToIndex = (e: any) => {
     e.preventDefault();
-    Router.push("/");
+    Router.push("/", "/", { shallow: true });
   };
-
-  console.log(`nameRouter : ${nameRouter}`);
-  console.log(`queryName : ${queryName}`);
-  console.log(`name : ${name}`);
-  console.log(`MSG : ${MSG}`);
-
   return (
     <>
       <motion.div
@@ -44,6 +38,7 @@ function PersonalMessage() {
           alignItems: "center",
           position: "absolute",
           backgroundColor: "transparent",
+          marginTop: "35px",
         }}
         transition={{ type: "spring", bounce: 0.25, duration: 0.5 }}>
         <motion.div

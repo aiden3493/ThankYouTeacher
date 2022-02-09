@@ -8,6 +8,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   overflow: scroll;
   user-select: none;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {

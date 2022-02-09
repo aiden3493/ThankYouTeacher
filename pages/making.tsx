@@ -89,12 +89,81 @@ function making() {
             "https://www.youtube.com/embed/9_8qgrHMyEE",
           ]}
         />
-        <Container day='4' videoCount='1' />
-        <Container day='5' videoCount='1' />
-        <Container day='6' videoCount='1' />
-        <Container day='7' videoCount='1' />
-        <Container day='8' videoCount='1' />
-        <Container day='9' videoCount='1' />
+        <Container
+          day='4'
+          videoCount='4'
+          src={[
+            "https://www.youtube.com/embed/FrGpmRe5Lzk",
+            "https://www.youtube.com/embed/qcL5EVW2fkU",
+            "https://www.youtube.com/embed/9_8qgrHMyEE",
+            "https://www.youtube.com/embed/9_8qgrHMyEE",
+          ]}
+        />
+        <Container
+          day='5'
+          videoCount='5'
+          src={[
+            "https://www.youtube.com/embed/FrGpmRe5Lzk",
+            "https://www.youtube.com/embed/qcL5EVW2fkU",
+            "https://www.youtube.com/embed/9_8qgrHMyEE",
+            "https://www.youtube.com/embed/9_8qgrHMyEE",
+            "https://www.youtube.com/embed/9_8qgrHMyEE",
+          ]}
+        />
+        <Container
+          day='6'
+          videoCount='6'
+          src={[
+            "https://www.youtube.com/embed/FrGpmRe5Lzk",
+            "https://www.youtube.com/embed/qcL5EVW2fkU",
+            "https://www.youtube.com/embed/qcL5EVW2fkU",
+            "https://www.youtube.com/embed/qcL5EVW2fkU",
+            "https://www.youtube.com/embed/qcL5EVW2fkU",
+            "https://www.youtube.com/embed/9_8qgrHMyEE",
+          ]}
+        />
+        <Container
+          day='7'
+          videoCount='7'
+          src={[
+            "https://www.youtube.com/embed/FrGpmRe5Lzk",
+            "https://www.youtube.com/embed/FrGpmRe5Lzk",
+            "https://www.youtube.com/embed/FrGpmRe5Lzk",
+            "https://www.youtube.com/embed/FrGpmRe5Lzk",
+            "https://www.youtube.com/embed/FrGpmRe5Lzk",
+            "https://www.youtube.com/embed/qcL5EVW2fkU",
+            "https://www.youtube.com/embed/9_8qgrHMyEE",
+          ]}
+        />
+        <Container
+          day='8'
+          videoCount='8'
+          src={[
+            "https://www.youtube.com/embed/FrGpmRe5Lzk",
+            "https://www.youtube.com/embed/FrGpmRe5Lzk",
+            "https://www.youtube.com/embed/FrGpmRe5Lzk",
+            "https://www.youtube.com/embed/FrGpmRe5Lzk",
+            "https://www.youtube.com/embed/FrGpmRe5Lzk",
+            "https://www.youtube.com/embed/FrGpmRe5Lzk",
+            "https://www.youtube.com/embed/qcL5EVW2fkU",
+            "https://www.youtube.com/embed/9_8qgrHMyEE",
+          ]}
+        />
+        <Container
+          day='9'
+          videoCount='9'
+          src={[
+            "https://www.youtube.com/embed/FrGpmRe5Lzk",
+            "https://www.youtube.com/embed/FrGpmRe5Lzk",
+            "https://www.youtube.com/embed/FrGpmRe5Lzk",
+            "https://www.youtube.com/embed/qcL5EVW2fkU",
+            "https://www.youtube.com/embed/qcL5EVW2fkU",
+            "https://www.youtube.com/embed/qcL5EVW2fkU",
+            "https://www.youtube.com/embed/9_8qgrHMyEE",
+            "https://www.youtube.com/embed/9_8qgrHMyEE",
+            "https://www.youtube.com/embed/9_8qgrHMyEE",
+          ]}
+        />
       </motion.div>
     </AnimateSharedLayout>
   );
