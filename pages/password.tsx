@@ -5,7 +5,7 @@ import styled from "../styles/password.module.css";
 
 let IsPassWordCorrect = false;
 
-function password() {
+function Password() {
   const [correct, setCorrect] = useState<null | boolean>(null);
   const [currentPS, setCurrentPs] = useState("");
 
@@ -72,4 +72,4 @@ function password() {
   );
 }
 
-export default password;
+export default Password;

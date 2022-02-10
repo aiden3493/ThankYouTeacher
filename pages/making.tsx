@@ -62,7 +62,7 @@ function Container(props: any) {
   );
 }
 
-function making() {
+function Making() {
   return (
     <AnimateSharedLayout>
       <motion.div className={styled.content} layout>
@@ -154,4 +154,4 @@ function making() {
   );
 }
 
-export default making;
+export default Making;

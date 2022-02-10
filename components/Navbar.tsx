@@ -3,7 +3,7 @@ import Image from "next/image";
 import logo from "../public/logo.svg";
 import Link from "next/link";
 
-function navbar(): JSX.Element {
+function Navbar(): JSX.Element {
   return (
     <div className='navigation bar'>
       <nav className={Styled.navbar} key='nav-nav'>
@@ -17,4 +17,4 @@ function navbar(): JSX.Element {
   );
 }
 
-export default navbar;
+export default Navbar;

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styled from "../styles/footer.module.css";
 
-function footer() {
+function Footer() {
   return (
     <div className={styled.footer}>
       <hr className={styled.outHr1} />
@@ -54,4 +54,4 @@ function footer() {
   );
 }
 
-export default footer;
+export default Footer;

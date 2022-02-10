@@ -3,7 +3,7 @@ import MessageBox from "./messageBox";
 import { motion } from "framer-motion";
 import Router from "next/router";
 
-function message() {
+function Message() {
   const onClick = (name: string) => {
     Router.push(`/message/${name}`);
   };
@@ -278,4 +278,4 @@ function message() {
   );
 }
 
-export default message;
+export default Message;

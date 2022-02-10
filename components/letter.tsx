@@ -1,6 +1,6 @@
 import styled from "../styles/letter.module.css";
 
-function letter() {
+function Letter() {
   return (
     <div className={styled.letter}>
       <h1 key='letter-title'>test</h1>
@@ -19,4 +19,4 @@ function letter() {
   );
 }
 
-export default letter;
+export default Letter;
