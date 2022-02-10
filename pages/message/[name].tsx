@@ -10,7 +10,7 @@ function PersonalMessage() {
   const [name, setName] = useState("");
   const [msg, setMsg] = useState("");
   useEffect(() => {
-    fetch("http://localhost:3000/api/message")
+    fetch("https://thankyouteacher.vercel.app/api/message")
       .then((res) => res.json())
       .then((json) => {
         setData(json.message);

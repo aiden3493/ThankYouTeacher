@@ -30,7 +30,9 @@ const Letter: FunctionComponent = () => {
   };
 
   const upload = () => {
-    const res = fetch(`http://localhost:3000/api/upload/${text}/${filesList}`);
+    const res = fetch(
+      `https://thankyouteacher.vercel.app/api/upload/${text}/${filesList}`
+    );
     console.log(res);
   };
 

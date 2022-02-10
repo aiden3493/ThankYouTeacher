@@ -39,3 +39,5 @@ yarn-error.log*
 #ppt
 .러프.pptx
 .~$러프.pptx
+
+.vercel
