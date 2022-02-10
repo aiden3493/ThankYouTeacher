@@ -66,102 +66,87 @@ function making() {
   return (
     <AnimateSharedLayout>
       <motion.div className={styled.content} layout>
-        <motion.h1 layout>test</motion.h1>
+        <motion.h1 layout>제작과정</motion.h1>
+        <motion.h3 layout>2022.1.30 - 2022.2.11</motion.h3>
         <Container
-          day='1'
-          videoCount='1'
-          src={["https://www.youtube.com/embed/FrGpmRe5Lzk"]}
-        />
-        <Container
-          day='2'
+          day='1일차'
           videoCount='2'
           src={[
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/qcL5EVW2fkU",
+            "https://www.youtube.com/embed/KXj77zfHRjU",
+            "https://www.youtube.com/embed/DeKJWPovmSk",
           ]}
         />
         <Container
-          day='3'
+          day='2일차'
           videoCount='3'
           src={[
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/qcL5EVW2fkU",
-            "https://www.youtube.com/embed/9_8qgrHMyEE",
+            "https://www.youtube.com/embed/WbwaCOU4tH0",
+            "https://www.youtube.com/embed/_Cunk8KL8u4",
+            "https://www.youtube.com/embed/FEPKz8fokNI",
           ]}
         />
         <Container
-          day='4'
+          day='3일차'
           videoCount='4'
           src={[
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/qcL5EVW2fkU",
-            "https://www.youtube.com/embed/9_8qgrHMyEE",
-            "https://www.youtube.com/embed/9_8qgrHMyEE",
+            "https://www.youtube.com/embed/V8rb6Ygifq8",
+            "https://www.youtube.com/embed/CwlH3qnS3sM",
+            "https://www.youtube.com/embed/WS2W19jjSxo",
+            "https://www.youtube.com/embed/Mn7sh8t3jjI",
           ]}
         />
         <Container
-          day='5'
-          videoCount='5'
+          day='4일차'
+          videoCount='1'
+          src={["https://www.youtube.com/embed/NGE5jIBnUMY"]}
+        />
+        <Container
+          day='5일차'
+          videoCount='1'
+          src={["https://www.youtube.com/embed/eKVrIKHDQKM"]}
+        />
+        <Container
+          day='6일차'
+          videoCount='1'
+          src={["https://www.youtube.com/embed/0VItHVHpjQU"]}
+        />
+        <Container
+          day='7일차'
+          videoCount='3'
           src={[
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/qcL5EVW2fkU",
-            "https://www.youtube.com/embed/9_8qgrHMyEE",
-            "https://www.youtube.com/embed/9_8qgrHMyEE",
-            "https://www.youtube.com/embed/9_8qgrHMyEE",
+            "https://www.youtube.com/embed/wn0FECTM7gk",
+            "https://www.youtube.com/embed/P_OXfoxZ4SQ",
+            "https://www.youtube.com/embed/4anSYKtIPA8",
           ]}
         />
         <Container
-          day='6'
-          videoCount='6'
+          day='8일차'
+          videoCount='2'
           src={[
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/qcL5EVW2fkU",
-            "https://www.youtube.com/embed/qcL5EVW2fkU",
-            "https://www.youtube.com/embed/qcL5EVW2fkU",
-            "https://www.youtube.com/embed/qcL5EVW2fkU",
-            "https://www.youtube.com/embed/9_8qgrHMyEE",
+            "https://www.youtube.com/embed/jsPfmnicoQ8",
+            "https://www.youtube.com/embed/xNn28K_CKqg",
+          ]}
+        />
+        <Container day='9일차 - 작업을 안했습니다' videoCount='9' src={[]} />
+        <Container
+          day='10일차'
+          videoCount='2'
+          src={[
+            "https://www.youtube.com/embed/Fh9uTslkFT8",
+            "https://www.youtube.com/embed/Evw0EZWqFrE",
           ]}
         />
         <Container
-          day='7'
-          videoCount='7'
-          src={[
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/qcL5EVW2fkU",
-            "https://www.youtube.com/embed/9_8qgrHMyEE",
-          ]}
+          day='11일차'
+          videoCount='1'
+          src={["https://www.youtube.com/embed/oOwAm9qVHLo"]}
         />
         <Container
-          day='8'
-          videoCount='8'
+          day='12일차'
+          videoCount='2'
           src={[
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/qcL5EVW2fkU",
-            "https://www.youtube.com/embed/9_8qgrHMyEE",
-          ]}
-        />
-        <Container
-          day='9'
-          videoCount='9'
-          src={[
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/FrGpmRe5Lzk",
-            "https://www.youtube.com/embed/qcL5EVW2fkU",
-            "https://www.youtube.com/embed/qcL5EVW2fkU",
-            "https://www.youtube.com/embed/qcL5EVW2fkU",
-            "https://www.youtube.com/embed/9_8qgrHMyEE",
-            "https://www.youtube.com/embed/9_8qgrHMyEE",
-            "https://www.youtube.com/embed/9_8qgrHMyEE",
+            "https://www.youtube.com/embed/dKgr7w2Wf5I",
+            "https://www.youtube.com/embed/615ntdQk2Sw",
           ]}
         />
       </motion.div>

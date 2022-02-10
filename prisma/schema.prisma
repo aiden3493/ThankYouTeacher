@@ -3,14 +3,20 @@
 
 generator client {
   provider = "prisma-client-js"
+  previewFeatures= ["referentialIntegrity"]
 }
 
 datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
+  referentialIntegrity = "prisma"
 }
 
-model message{
-  name String @unique
-  message String
+model message {
+  id String?
+  Name String @unique
+  message String? @db.LongText
+  photo String?
 }
+
+

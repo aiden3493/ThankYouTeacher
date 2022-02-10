@@ -9,9 +9,10 @@ function message() {
   };
   return (
     <div className={styled.message}>
-      <h1>test</h1>
-      <div className={styled.messageBoxes}>
+      <h1 key='msg-title'>우리들의 편지</h1>
+      <div className={styled.messageBoxes} key='msg-box1'>
         <motion.div
+          key='msg-1'
           layout
           layoutId='KangMinJae'
           onClick={() => onClick("KangMinJae")}
@@ -24,6 +25,7 @@ function message() {
         </motion.div>
 
         <motion.div
+          key='msg-2'
           layout
           layoutId='KimSeungHa'
           onClick={() => onClick("KimSeungHa")}
@@ -36,6 +38,7 @@ function message() {
         </motion.div>
 
         <motion.div
+          key='msg-3'
           layout
           layoutId='MoonSoa'
           onClick={() => onClick("MoonSoa")}
@@ -48,6 +51,7 @@ function message() {
         </motion.div>
 
         <motion.div
+          key='msg-4'
           layout
           layoutId='SungChaeWon'
           onClick={() => onClick("SungChaeWon")}
@@ -60,6 +64,7 @@ function message() {
         </motion.div>
 
         <motion.div
+          key='msg-5'
           layout
           layoutId='ShinWooChan'
           onClick={() => onClick("ShinWooChan")}
@@ -71,8 +76,9 @@ function message() {
           <MessageBox value='신우찬' />
         </motion.div>
       </div>
-      <div className={styled.messageBoxes}>
+      <div className={styled.messageBoxes} key='msg-box2'>
         <motion.div
+          key='msg-6'
           layout
           layoutId='AnDaKyung'
           onClick={() => onClick("AnDaKyung")}
@@ -85,6 +91,7 @@ function message() {
         </motion.div>
 
         <motion.div
+          key='msg-7'
           layout
           layoutId='YuDokyung'
           onClick={() => onClick("YuDokyung")}
@@ -97,6 +104,7 @@ function message() {
         </motion.div>
 
         <motion.div
+          key='msg-8'
           layout
           layoutId='LeeDongyoung'
           onClick={() => onClick("LeeDongyoung")}
@@ -109,6 +117,7 @@ function message() {
         </motion.div>
 
         <motion.div
+          key='msg-9'
           layout
           layoutId='LeeSangheon'
           onClick={() => onClick("LeeSangheon")}
@@ -121,6 +130,7 @@ function message() {
         </motion.div>
 
         <motion.div
+          key='msg-10'
           layout
           layoutId='LeeSeojung'
           onClick={() => onClick("LeeSeojung")}
@@ -132,8 +142,9 @@ function message() {
           <MessageBox value='이서정' />
         </motion.div>
       </div>
-      <div className={styled.messageBoxes}>
+      <div className={styled.messageBoxes} key='msg-box3'>
         <motion.div
+          key='msg-11'
           layout
           layoutId='LeeSieun'
           onClick={() => onClick("LeeSieun")}
@@ -146,6 +157,7 @@ function message() {
         </motion.div>
 
         <motion.div
+          key='msg-12'
           layout
           layoutId='LeeEunwoo'
           onClick={() => onClick("LeeEunwoo")}
@@ -158,6 +170,7 @@ function message() {
         </motion.div>
 
         <motion.div
+          key='msg-13'
           layout
           layoutId='LeeJungheon'
           onClick={() => onClick("LeeJungheon")}
@@ -170,6 +183,7 @@ function message() {
         </motion.div>
 
         <motion.div
+          key='msg-14'
           layout
           layoutId='LeeJaehee'
           onClick={() => onClick("LeeJaehee")}
@@ -182,6 +196,7 @@ function message() {
         </motion.div>
 
         <motion.div
+          key='msg-15'
           layout
           layoutId='LeeChaekyung'
           onClick={() => onClick("LeeChaekyung")}
@@ -193,8 +208,9 @@ function message() {
           <MessageBox value='이채경' />
         </motion.div>
       </div>
-      <div className={styled.messageBoxes}>
+      <div className={styled.messageBoxes} key='msg-box4'>
         <motion.div
+          key='msg-16'
           layout
           layoutId='LeeHyunsoo'
           onClick={() => onClick("LeeHyunsoo")}
@@ -207,6 +223,7 @@ function message() {
         </motion.div>
 
         <motion.div
+          key='msg-17'
           layout
           layoutId='LeeHaemin'
           onClick={() => onClick("LeeHaemin")}
@@ -219,6 +236,7 @@ function message() {
         </motion.div>
 
         <motion.div
+          key='msg-18'
           layout
           layoutId='ChaeHyerim'
           onClick={() => onClick("ChaeHyerim")}
@@ -231,6 +249,7 @@ function message() {
         </motion.div>
 
         <motion.div
+          key='msg-19'
           layout
           layoutId='ChoiYeram'
           onClick={() => onClick("ChoiYeram")}
@@ -243,6 +262,7 @@ function message() {
         </motion.div>
 
         <motion.div
+          key='msg-20'
           layout
           layoutId='ChoiJinkyu'
           onClick={() => onClick("ChoiJinkyu")}

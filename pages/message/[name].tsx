@@ -1,13 +1,31 @@
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
-import MSGdata from "../../components/messageData";
 import Router from "next/router";
+import { useEffect, useState } from "react";
 
 function PersonalMessage() {
   const nameRouter = useRouter();
   const queryName = nameRouter.query.name?.toString()!;
-  const name = MSGdata[queryName]["name"];
-  const MSG = MSGdata[queryName]["message"];
+  const [data, setData] = useState<any>([]);
+  const [name, setName] = useState("");
+  const [msg, setMsg] = useState("");
+  useEffect(() => {
+    fetch("http://localhost:3000/api/message")
+      .then((res) => res.json())
+      .then((json) => {
+        setData(json.message);
+        if (data != "") {
+          console.log(`data : ${data}`);
+          const index = data.findIndex(
+            (element: any) => element.id === queryName
+          );
+          const msgObject = data[index];
+
+          setName(`${msgObject.Name}`);
+          setMsg(`${msgObject.message}`);
+        }
+      });
+  });
 
   const backToIndex = (e: any) => {
     e.preventDefault();
@@ -45,20 +63,34 @@ function PersonalMessage() {
           style={{
             display: "flex",
             width: "600px",
-            height: "700px",
+            height: "400px",
             backgroundColor: "white",
             borderRadius: "20px",
             boxShadow: "0px 0px 15px gray",
             flexDirection: "column",
             position: "absolute",
+            alignContent: "center",
+            alignItems: "center",
           }}
           transition={{ type: "spring", bounce: 0.25 }}>
-          <motion.h1 style={{ marginLeft: "30px", marginTop: "30px" }}>
+          <motion.h1
+            style={{
+              marginLeft: "30px",
+              marginRight: "30px",
+              marginTop: "30px",
+              textAlign: "center",
+            }}>
             {name}
           </motion.h1>
           <motion.p
-            style={{ marginLeft: "30px", marginTop: "30px", fontSize: "23px" }}>
-            {MSG}
+            style={{
+              marginLeft: "30px",
+              marginRight: "30px",
+              marginTop: "30px",
+              fontSize: "20px",
+              textAlign: "center",
+            }}>
+            {msg}
           </motion.p>
         </motion.div>
       </motion.div>

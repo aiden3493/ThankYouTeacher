@@ -6,10 +6,10 @@ import Link from "next/link";
 function navbar(): JSX.Element {
   return (
     <div className='navigation bar'>
-      <nav className={Styled.navbar}>
+      <nav className={Styled.navbar} key='nav-nav'>
         <Link href='/'>
-          <div className={Styled.logo}>
-            <Image className={Styled.SvgLogo} src={logo} />
+          <div className={Styled.logo} key='nav-logo'>
+            <Image key='nav-img' className={Styled.SvgLogo} src={logo} />
           </div>
         </Link>
       </nav>

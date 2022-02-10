@@ -24,7 +24,7 @@ function password() {
 
   const onEnter = (e: any) => {
     e.preventDefault();
-    if (currentPS === "12345") {
+    if (currentPS === "THKYT") {
       IsPassWordCorrect = true;
       setCorrect(true);
       Router.push(

@@ -10,7 +10,7 @@ function PhotoGallery({ name, width, height }: any) {
       layout
       className={styled.PhotoGallery}
       onClick={() => setIsOpen(!isOpen)}>
-      <h1>{name}</h1>
+      <h1 key='gallery-title'>{name}</h1>
     </motion.div>
   );
 }

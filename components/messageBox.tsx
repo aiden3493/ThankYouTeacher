@@ -4,7 +4,7 @@ import styled from "../styles/message.module.css";
 function messageBox(props: any) {
   return (
     <motion.div className={styled.messageBox}>
-      <motion.h1>{props.value}</motion.h1>
+      <motion.h1 key='msg-box-name'>{props.value}</motion.h1>
     </motion.div>
   );
 }

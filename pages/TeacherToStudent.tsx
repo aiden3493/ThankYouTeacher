@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import Navbar from "../components/Navbar";
 import Letter from "../components/TeahcerToStudentLetter";
 import styled from "../styles/TeacherToStudentCSS.module.css";
 

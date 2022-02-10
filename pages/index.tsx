@@ -1,6 +1,5 @@
 import styled from "../styles/Home.module.css";
 
-import Navbar from "../components/Navbar";
 import Letter from "../components/letter";
 import Message from "../components/message";
 import Photos from "../components/photos";
@@ -11,12 +10,12 @@ function Home() {
   return (
     <>
       <div className={styled.content}>
-        <Letter />
-        <Message />
-        <Photos />
-        <TeacherToStudentComponents />
+        <Letter key='letter' />
+        <Message key='Message' />
+        <Photos key='Photos' />
+        <TeacherToStudentComponents key='TeacherToStudentComponents' />
       </div>
-      <Footer />
+      <Footer key='Footer' />
     </>
   );
 }
