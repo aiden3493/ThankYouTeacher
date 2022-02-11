@@ -47,7 +47,8 @@ function TeacherToStudentComponents() {
             <motion.button
               key='TTS-btn'
               className={styled.Btn}
-              whileHover={{ scale: 1.1 }}>
+              whileHover={{ scale: 1.1 }}
+              style={{ color: "white", fontWeight: "bold" }}>
               Write!
             </motion.button>
           </Link>

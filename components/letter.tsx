@@ -3,7 +3,7 @@ import styled from "../styles/letter.module.css";
 function Letter() {
   return (
     <div className={styled.letter}>
-      <h2 key='letter-title'>선생님께</h2>
+      <h2 key='letter-title'>6학년 4반 이소연 선생님께</h2>
       <p key='letter-content'>
         안녕하세요 선생님!
         <br /> 이 사이트는 오직 선생님을 위해 제작됐어요!
