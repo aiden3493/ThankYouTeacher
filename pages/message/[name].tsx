@@ -9,6 +9,9 @@ function PersonalMessage() {
   const [data, setData] = useState<any>([]);
   const [name, setName] = useState("");
   const [msg, setMsg] = useState("");
+  const [loding, setLoding] = useState(true);
+  console.log(`loding : ${loding}`);
+
   useEffect(() => {
     fetch(`${Router.basePath}/api/message`)
       .then((res) => res.json())
@@ -24,6 +27,7 @@ function PersonalMessage() {
           setMsg(`${msgObject.message}`);
         }
       });
+    setLoding(false);
   });
 
   const backToIndex = (e: any) => {
@@ -72,26 +76,40 @@ function PersonalMessage() {
             alignItems: "center",
           }}
           transition={{ type: "spring", bounce: 0.25 }}>
-          <motion.h1
-            style={{
-              marginLeft: "30px",
-              marginRight: "30px",
-              marginTop: "30px",
-              textAlign: "center",
-            }}>
-            {name}
-          </motion.h1>
-          <motion.p
-            style={{
-              marginLeft: "30px",
-              marginRight: "30px",
-              marginTop: "30px",
-              fontSize: "20px",
-              textAlign: "center",
-              padding: "15px",
-            }}>
-            {msg}
-          </motion.p>
+          {loding ? (
+            <motion.h1
+              style={{
+                marginLeft: "30px",
+                marginRight: "30px",
+                marginTop: "180px",
+                textAlign: "center",
+              }}>
+              Loding···
+            </motion.h1>
+          ) : (
+            <>
+              <motion.h1
+                style={{
+                  marginLeft: "30px",
+                  marginRight: "30px",
+                  marginTop: "30px",
+                  textAlign: "center",
+                }}>
+                {name}
+              </motion.h1>
+              <motion.p
+                style={{
+                  marginLeft: "30px",
+                  marginRight: "30px",
+                  marginTop: "30px",
+                  fontSize: "20px",
+                  textAlign: "center",
+                  padding: "15px",
+                }}>
+                {msg}
+              </motion.p>
+            </>
+          )}
         </motion.div>
       </motion.div>
     </>
