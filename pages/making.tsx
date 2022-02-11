@@ -127,7 +127,7 @@ function Making() {
             "https://www.youtube.com/embed/xNn28K_CKqg",
           ]}
         />
-        <Container day='9일차 - 작업을 안했습니다' videoCount='9' src={[]} />
+        <Container day='9일차 - 작업을 안했습니다' videoCount='0' src={[]} />
         <Container
           day='10일차'
           videoCount='2'

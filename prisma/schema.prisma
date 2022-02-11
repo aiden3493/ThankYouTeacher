@@ -16,7 +16,7 @@ model message {
   id String?
   Name String @unique
   message String? @db.LongText
-  photo String?
+  photo String? @db.LongText @default(dbgenerated())
 }
 
 

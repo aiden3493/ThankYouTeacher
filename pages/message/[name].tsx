@@ -10,12 +10,11 @@ function PersonalMessage() {
   const [name, setName] = useState("");
   const [msg, setMsg] = useState("");
   useEffect(() => {
-    fetch("https://thankyouteacher.vercel.app/api/message")
+    fetch(`${Router.basePath}/api/message`)
       .then((res) => res.json())
       .then((json) => {
         setData(json.message);
         if (data != "") {
-          console.log(`data : ${data}`);
           const index = data.findIndex(
             (element: any) => element.id === queryName
           );
@@ -89,6 +88,7 @@ function PersonalMessage() {
               marginTop: "30px",
               fontSize: "20px",
               textAlign: "center",
+              padding: "15px",
             }}>
             {msg}
           </motion.p>

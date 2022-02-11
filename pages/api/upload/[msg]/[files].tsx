@@ -1,23 +1,25 @@
+import { Prisma } from "@prisma/client";
 import { NextApiRequest, NextApiResponse } from "next";
 import client from "../../../../libs/prismaClient";
 
 async function handler(req: NextApiRequest, res: NextApiResponse) {
   const query = req.query;
+  var json = query.files as Prisma.JsonArray;
 
-  const update = await client.message.update({
+  await client.message.update({
     where: {
       Name: "이소연",
     },
 
     data: {
       message: `${query.msg}`,
-      photo: `${query.fiels}`,
+      photo: `${json}`,
     },
   });
 
   return res.json({
     msg: query.msg,
-    files: query.files,
+    files: json,
   });
 }
 
