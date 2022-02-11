@@ -68,6 +68,12 @@ function Making() {
       <motion.div className={styled.content} layout>
         <motion.h1 layout>제작과정</motion.h1>
         <motion.h3 layout>2022.1.30 - 2022.2.11</motion.h3>
+        <motion.h3 layout>
+          코드 :{" "}
+          <motion.a href='https://github.com/aiden3493/ThankYouTeacher' layout>
+            GitHub
+          </motion.a>
+        </motion.h3>
         <Container
           day='1일차'
           videoCount='2'
