@@ -68,13 +68,13 @@ function PersonalMessage() {
             </motion.h1>
             <motion.p
               style={{
-                marginLeft: "30px",
-                marginRight: "30px",
-                marginTop: "30px",
-                fontSize: "20px",
+                marginLeft: "10px",
+                marginRight: "10px",
+                marginTop: "5px",
+                fontSize: "19px",
                 textAlign: "center",
-                paddingLeft: "13%",
-                paddingRight: "13%",
+                paddingLeft: "10%",
+                paddingRight: "10%",
               }}>
               {message}
             </motion.p>
