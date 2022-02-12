@@ -7,7 +7,8 @@ import styled from "../styles/TeacherToStudentCSS.module.css";
 function TeacherToStudentComponents() {
   const [data, setData] = useState<any>([]);
   const [msg, setMsg] = useState("");
-  const [photos, setPhotos] = useState<any>([]);
+  // 이미지 안씀
+  // const [photos, setPhotos] = useState<any>([]);
 
   const [isWroted, setIsWroted] = useState(false);
 
@@ -22,7 +23,8 @@ function TeacherToStudentComponents() {
           );
           const msgObject = data[index];
 
-          setPhotos(msgObject.photo);
+          // 이미지 안씀
+          // setPhotos(msgObject.photo);
           setMsg(`${msgObject.message}`);
         }
       });
