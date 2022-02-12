@@ -118,6 +118,7 @@ const Letter: FunctionComponent = () => {
       <button onClick={upload} key='TTS-upload' className={styled.upload}>
         UPLOAD
       </button>
+      <p style={{ marginTop: "-80px" }}>업로드 후 내용을 수정할 수 없습니다</p>
     </div>
   );
 };
