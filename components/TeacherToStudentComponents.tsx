@@ -37,12 +37,7 @@ function TeacherToStudentComponents() {
 
   return (
     <div className={styled.TeacherToStudentSection}>
-      {isWroted ? (
-        <>
-          <h1 key='TTS-title'>6-4반 아이들에게</h1>
-          <h2 style={{ fontSize: "17px" }}>{msg}</h2>
-        </>
-      ) : (
+      {!isWroted ? (
         <>
           <h1 key='TTS-title'>이제 선생님 차례에요!</h1>
           <Link href='/password'>
@@ -54,6 +49,11 @@ function TeacherToStudentComponents() {
               Write!
             </motion.button>
           </Link>
+        </>
+      ) : (
+        <>
+          <h1 key='TTS-title'>6-4반 아이들에게</h1>
+          <h2 style={{ fontSize: "17px" }}>{msg}</h2>
         </>
       )}
     </div>
