@@ -8,7 +8,7 @@ function Footer() {
       <hr className={styled.inHr1} />
       <div className={styled.Link}>
         <Link href='/making'>
-          <h1 className={styled.makingLink}>제작과정</h1>
+          <h1 className={styled.makingLink}>제작과정 보기</h1>
         </Link>
       </div>
       <hr className={styled.inHr2} />
