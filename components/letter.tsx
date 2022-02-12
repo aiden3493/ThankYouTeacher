@@ -4,7 +4,7 @@ function Letter() {
   return (
     <div className={styled.letter}>
       <h2 key='letter-title'>6학년 4반 이소연 선생님께</h2>
-      <p key='letter-content'>
+      <p key='letter-content' style={{ fontSize: "15px" }}>
         안녕하세요 선생님!
         <br /> 이 사이트는 오직 선생님을 위해 제작됐어요!
         <br /> 모두 우리반이 함께 만들었습니다
