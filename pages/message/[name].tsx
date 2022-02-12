@@ -1,34 +1,14 @@
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Router from "next/router";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function PersonalMessage() {
-  const nameRouter = useRouter();
-  const queryName = nameRouter.query.name?.toString()!;
-  const [data, setData] = useState<any>([]);
-  const [name, setName] = useState("");
-  const [msg, setMsg] = useState("");
-  const [loding, setLoding] = useState(true);
-  console.log(`loding : ${loding}`);
-
-  useEffect(() => {
-    fetch(`${Router.basePath}/api/message`)
-      .then((res) => res.json())
-      .then((json) => {
-        setData(json.message);
-        if (data != "") {
-          const index = data.findIndex(
-            (element: any) => element.id === queryName
-          );
-          const msgObject = data[index];
-
-          setName(`${msgObject.Name}`);
-          setMsg(`${msgObject.message}`);
-        }
-      });
-    setLoding(false);
-  });
+  const route = useRouter();
+  const query = route.query;
+  const name = query.Sname;
+  const message = query.Smsg;
+  console.log(`${message}`);
 
   const backToIndex = (e: any) => {
     e.preventDefault();
@@ -49,7 +29,7 @@ function PersonalMessage() {
       />
       <motion.div
         layout
-        layoutId={`${queryName}`}
+        layoutId={`${query.name}`}
         style={{
           width: "100vw",
           height: "100vh",
@@ -76,40 +56,29 @@ function PersonalMessage() {
             alignItems: "center",
           }}
           transition={{ type: "spring", bounce: 0.25 }}>
-          {loding ? (
+          <>
             <motion.h1
               style={{
                 marginLeft: "30px",
                 marginRight: "30px",
-                marginTop: "180px",
+                marginTop: "30px",
                 textAlign: "center",
               }}>
-              Loding···
+              {name}
             </motion.h1>
-          ) : (
-            <>
-              <motion.h1
-                style={{
-                  marginLeft: "30px",
-                  marginRight: "30px",
-                  marginTop: "30px",
-                  textAlign: "center",
-                }}>
-                {name}
-              </motion.h1>
-              <motion.p
-                style={{
-                  marginLeft: "30px",
-                  marginRight: "30px",
-                  marginTop: "30px",
-                  fontSize: "20px",
-                  textAlign: "center",
-                  padding: "15px",
-                }}>
-                {msg}
-              </motion.p>
-            </>
-          )}
+            <motion.p
+              style={{
+                marginLeft: "35px",
+                marginRight: "35px",
+                marginTop: "30px",
+                fontSize: "20px",
+                textAlign: "center",
+                paddingLeft: "35px",
+                paddingRight: "35px",
+              }}>
+              {message}
+            </motion.p>
+          </>
         </motion.div>
       </motion.div>
     </>

@@ -12,7 +12,7 @@ function TeacherToStudentComponents() {
   const [isWroted, setIsWroted] = useState(false);
 
   useEffect(() => {
-    fetch(`${Router.basePath}/api/message`)
+    fetch(`${Router.basePath}/api/message/LeeSoYeon`)
       .then((res) => res.json())
       .then((json) => {
         setData(json.message);
