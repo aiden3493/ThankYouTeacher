@@ -198,7 +198,7 @@ function Photos() {
           initial={{ x: 1350 }}
           animate={{ x: -1950 }}
           transition={{
-            duration: 55,
+            duration: 40,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
