@@ -31,6 +31,26 @@ import photo27 from "../public/image27.jpg";
 import photo28 from "../public/image28.jpg";
 import photo29 from "../public/image29.jpg";
 import photo30 from "../public/image30.png";
+import photo31 from "../public/image31.jpg";
+import photo32 from "../public/image32.jpg";
+import photo33 from "../public/image33.jpg";
+import photo34 from "../public/image34.jpg";
+import photo35 from "../public/image35.jpg";
+import photo36 from "../public/image36.jpg";
+import photo37 from "../public/image37.jpg";
+import photo38 from "../public/image38.jpg";
+import photo39 from "../public/image39.jpg";
+import photo40 from "../public/image40.jpg";
+import photo41 from "../public/image41.jpg";
+import photo42 from "../public/image42.jpg";
+import photo43 from "../public/image43.jpg";
+import photo44 from "../public/image44.jpg";
+import photo45 from "../public/image45.png";
+import photo46 from "../public/image46.jpg";
+import photo47 from "../public/image47.jpg";
+import photo48 from "../public/image48.jpg";
+import photo49 from "../public/image49.jpg";
+import photo50 from "../public/image50.jpg";
 
 function Photos() {
   return (
@@ -197,6 +217,114 @@ function Photos() {
           <Photo ImageSrc={photo28} key='photos-photo-2-28' />
           <Photo ImageSrc={photo29} key='photos-photo-2-29' />
           <Photo ImageSrc={photo30} key='photos-photo-2-10' />
+        </motion.div>
+      </motion.div>
+
+      <motion.div className={styled.photos} key='photos-div4'>
+        <motion.div
+          key='photos-3'
+          className={styled.photos}
+          initial={{ x: 1350 }}
+          animate={{ x: -1950 }}
+          transition={{
+            duration: 40,
+            repeat: Infinity,
+            delay: 0,
+            repeatType: "loop",
+            repeatDelay: 0,
+            ease: "linear",
+          }}>
+          {/* first */}
+
+          <Photo ImageSrc={photo31} key='photos-photo-31' />
+          <Photo ImageSrc={photo32} key='photos-photo-32' />
+          <Photo ImageSrc={photo33} key='photos-photo-33' />
+          <Photo ImageSrc={photo34} key='photos-photo-34' />
+          <Photo ImageSrc={photo35} key='photos-photo-35' />
+          <Photo ImageSrc={photo36} key='photos-photo-36' />
+          <Photo ImageSrc={photo37} key='photos-photo-37' />
+          <Photo ImageSrc={photo38} key='photos-photo-38' />
+          <Photo ImageSrc={photo39} key='photos-photo-39' />
+          <Photo ImageSrc={photo40} key='photos-photo-40' />
+        </motion.div>
+        <motion.div
+          className={styled.photos}
+          initial={{ x: 1350 }}
+          animate={{ x: -1950 }}
+          transition={{
+            duration: 40,
+            repeat: Infinity,
+            delay: 0,
+            repeatType: "loop",
+            repeatDelay: 0,
+            ease: "linear",
+          }}>
+          {/* second */}
+
+          <Photo ImageSrc={photo31} key='photos-photo-2-31' />
+          <Photo ImageSrc={photo32} key='photos-photo-2-32' />
+          <Photo ImageSrc={photo33} key='photos-photo-2-33' />
+          <Photo ImageSrc={photo34} key='photos-photo-2-34' />
+          <Photo ImageSrc={photo35} key='photos-photo-2-35' />
+          <Photo ImageSrc={photo36} key='photos-photo-2-36' />
+          <Photo ImageSrc={photo37} key='photos-photo-2-37' />
+          <Photo ImageSrc={photo38} key='photos-photo-2-38' />
+          <Photo ImageSrc={photo39} key='photos-photo-2-39' />
+          <Photo ImageSrc={photo40} key='photos-photo-2-40' />
+        </motion.div>
+      </motion.div>
+
+      <motion.div className={styled.photos} key='photos-div5'>
+        <motion.div
+          key='photos-3'
+          className={styled.photos}
+          initial={{ x: 1350 }}
+          animate={{ x: -1950 }}
+          transition={{
+            duration: 40,
+            repeat: Infinity,
+            delay: 0,
+            repeatType: "loop",
+            repeatDelay: 0,
+            ease: "linear",
+          }}>
+          {/* first */}
+
+          <Photo ImageSrc={photo41} key='photos-photo-41' />
+          <Photo ImageSrc={photo42} key='photos-photo-42' />
+          <Photo ImageSrc={photo43} key='photos-photo-43' />
+          <Photo ImageSrc={photo44} key='photos-photo-44' />
+          <Photo ImageSrc={photo45} key='photos-photo-45' />
+          <Photo ImageSrc={photo46} key='photos-photo-46' />
+          <Photo ImageSrc={photo47} key='photos-photo-47' />
+          <Photo ImageSrc={photo48} key='photos-photo-48' />
+          <Photo ImageSrc={photo49} key='photos-photo-49' />
+          <Photo ImageSrc={photo50} key='photos-photo-50' />
+        </motion.div>
+        <motion.div
+          className={styled.photos}
+          initial={{ x: 1350 }}
+          animate={{ x: -1950 }}
+          transition={{
+            duration: 40,
+            repeat: Infinity,
+            delay: 0,
+            repeatType: "loop",
+            repeatDelay: 0,
+            ease: "linear",
+          }}>
+          {/* second */}
+
+          <Photo ImageSrc={photo41} key='photos-photo-2-41' />
+          <Photo ImageSrc={photo42} key='photos-photo-2-42' />
+          <Photo ImageSrc={photo43} key='photos-photo-2-43' />
+          <Photo ImageSrc={photo44} key='photos-photo-2-44' />
+          <Photo ImageSrc={photo45} key='photos-photo-2-45' />
+          <Photo ImageSrc={photo46} key='photos-photo-2-46' />
+          <Photo ImageSrc={photo47} key='photos-photo-2-47' />
+          <Photo ImageSrc={photo48} key='photos-photo-2-48' />
+          <Photo ImageSrc={photo49} key='photos-photo-2-49' />
+          <Photo ImageSrc={photo50} key='photos-photo-2-50' />
         </motion.div>
       </motion.div>
     </div>
