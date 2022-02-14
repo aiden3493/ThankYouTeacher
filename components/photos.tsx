@@ -198,7 +198,7 @@ function Photos() {
           initial={{ x: 1350 }}
           animate={{ x: -1950 }}
           transition={{
-            duration: 40,
+            duration: 55,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
@@ -227,7 +227,7 @@ function Photos() {
           initial={{ x: 1350 }}
           animate={{ x: -1950 }}
           transition={{
-            duration: 40,
+            duration: 55,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
@@ -252,7 +252,7 @@ function Photos() {
           initial={{ x: 1350 }}
           animate={{ x: -1950 }}
           transition={{
-            duration: 40,
+            duration: 55,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
@@ -281,7 +281,7 @@ function Photos() {
           initial={{ x: 1350 }}
           animate={{ x: -1950 }}
           transition={{
-            duration: 40,
+            duration: 30,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
@@ -306,7 +306,7 @@ function Photos() {
           initial={{ x: 1350 }}
           animate={{ x: -1950 }}
           transition={{
-            duration: 40,
+            duration: 30,
             repeat: Infinity,
             delay: 0,
             repeatType: "loop",
