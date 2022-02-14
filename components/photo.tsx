@@ -5,7 +5,12 @@ import Image from "next/image";
 function Photo(props: any) {
   return (
     <motion.div className={styled.photo}>
-      <Image key='photo-img' src={props.ImageSrc} className={styled.photo} />
+      <Image
+        alt={`${props.ImageSrc}`}
+        key='photo-img'
+        src={props.ImageSrc}
+        className={styled.photo}
+      />
     </motion.div>
   );
 }
