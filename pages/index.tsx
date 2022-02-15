@@ -7,9 +7,13 @@ import TeacherToStudentComponents from "../components/TeacherToStudentComponents
 import Footer from "../components/footer";
 
 function Home() {
+  const onMenu = (e: any) => {
+    e.preventDefault();
+  };
+
   return (
     <>
-      <div className={styled.content}>
+      <div className={styled.content} onContextMenu={onMenu}>
         <Letter key='letter' />
         <Message key='Message' />
         <Photos key='Photos' />
