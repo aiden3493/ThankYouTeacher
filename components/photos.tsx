@@ -22,7 +22,7 @@ import photo18 from "../public/image18.png";
 import photo19 from "../public/image19.jpg";
 import photo20 from "../public/image20.jpg";
 import photo21 from "../public/image21.jpg";
-import photo22 from "../public/image22.jpeg";
+import photo22 from "../public/image22.jpg";
 import photo23 from "../public/image23.jpg";
 import photo24 from "../public/image24.png";
 import photo25 from "../public/image25.jpg";
