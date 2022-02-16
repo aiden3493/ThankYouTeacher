@@ -52,6 +52,7 @@ function PersonalMessage() {
             position: "absolute",
             alignContent: "center",
             alignItems: "center",
+            marginTop: "5%",
           }}
           transition={{ type: "spring", bounce: 0.25 }}>
           <>
