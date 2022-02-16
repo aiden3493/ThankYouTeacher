@@ -1,4 +1,4 @@
-import { AnimatePresence, AnimateSharedLayout, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import styled from "../styles/message.module.css";
 
 function MessageBox(props: any) {

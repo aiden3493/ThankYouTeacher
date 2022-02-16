@@ -15,7 +15,8 @@ function Message() {
           id: `${Sid}`,
         },
       },
-      `/message/${Sid}`
+      `/message/${Sid}`,
+      { scroll: false }
     );
   };
 

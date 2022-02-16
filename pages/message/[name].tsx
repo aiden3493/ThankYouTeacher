@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Router from "next/router";
-import { useState } from "react";
 
 function PersonalMessage() {
   const route = useRouter();
@@ -12,7 +11,7 @@ function PersonalMessage() {
 
   const backToIndex = (e: any) => {
     e.preventDefault();
-    Router.push("/", "/", { shallow: true });
+    Router.push("/", "/", { scroll: false });
   };
   return (
     <>
@@ -39,7 +38,6 @@ function PersonalMessage() {
           alignItems: "center",
           position: "absolute",
           backgroundColor: "transparent",
-          marginTop: "35px",
         }}
         transition={{ type: "spring", bounce: 0.25, duration: 0.5 }}>
         <motion.div
