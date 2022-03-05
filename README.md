@@ -1,4 +1,4 @@
-개인정보 보호를 위해 Public 디렉토리는 삭제했습니다
+## 개인정보 보호를 위해 Public 디렉토리는 삭제했습니다
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
